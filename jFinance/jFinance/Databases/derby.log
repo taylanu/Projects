@@ -1,0 +1,31 @@
+Wed Jan 15 23:53:22 EST 2020 : Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Wed Jan 15 23:53:50 EST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-016f-acb2-d22f-00001a0dd24d 
+on database directory C:\Users\Taylan Unal\Documents\GitHub\Projects\jFinance\jFinance\Databases\jFinance with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
+Loaded from file:/C:/Program%20Files/NetBeans%208.2/db-derby-10.14.2.0-lib/lib/derby.jar
+java.vendor=AdoptOpenJDK
+java.runtime.version=1.8.0_232-b09
+user.dir=C:\Program Files\NetBeans 8.2\db-derby-10.14.2.0-lib
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Taylan Unal\Documents\GitHub\Projects\jFinance\jFinance\Databases
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Jan 15 23:53:51 EST 2020:
+Shutting down instance a816c00e-016f-acb2-d22f-00001a0dd24d on database directory C:\Users\Taylan Unal\Documents\GitHub\Projects\jFinance\jFinance\Databases\jFinance with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
+Wed Jan 15 23:53:52 EST 2020 Thread[DRDAConnThread_3,5,main] (DATABASE = jFinance), (DRDAID = {2}), Database 'jFinance' shutdown.
+----------------------------------------------------------------
+Wed Jan 15 23:53:56 EST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 6ede40af-016f-acb2-d22f-00001a0dd24d 
+on database directory C:\Users\Taylan Unal\Documents\GitHub\Projects\jFinance\jFinance\Databases\jFinance with class loader sun.misc.Launcher$AppClassLoader@5e2de80c 
+Loaded from file:/C:/Program%20Files/NetBeans%208.2/db-derby-10.14.2.0-lib/lib/derby.jar
+java.vendor=AdoptOpenJDK
+java.runtime.version=1.8.0_232-b09
+user.dir=C:\Program Files\NetBeans 8.2\db-derby-10.14.2.0-lib
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\Taylan Unal\Documents\GitHub\Projects\jFinance\jFinance\Databases
+Database Class Loader started - derby.database.classpath=''
