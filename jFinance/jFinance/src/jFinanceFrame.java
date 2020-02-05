@@ -27,30 +27,44 @@ public class jFinanceFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         RoomSchedulerTitle = new javax.swing.JLabel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
-        ReserveRoom_JPanel = new javax.swing.JPanel();
-        ReserveRoom_Faculty = new javax.swing.JLabel();
-        ReserveRoom_FacultyComboBox = new javax.swing.JComboBox<>();
-        ReserveRoom_Date = new javax.swing.JLabel();
-        ReserveRoom_DateComboBox = new javax.swing.JComboBox<>();
-        ReserveRoom_SeatsRequired = new javax.swing.JLabel();
-        ReserveRoom_SeatsTextField = new javax.swing.JTextField();
-        ReserveRoom_SubmitButton = new javax.swing.JButton();
-        ReserveRoom_InputTextArea = new javax.swing.JTextArea();
-        ReserveRoom_InputLabel = new javax.swing.JLabel();
-        ReserveRoom_ConfirmationLabel = new javax.swing.JLabel();
-        ReserveRoom_ConfirmationTextArea = new javax.swing.JTextArea();
-        addAccounts = new javax.swing.JPanel();
+        TimeDate = new javax.swing.JLabel();
+        mainPane = new javax.swing.JTabbedPane();
+        LoginSignup = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+        SignInPanel = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jTextField20 = new javax.swing.JTextField();
+        jTextField21 = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
+        jTextField22 = new javax.swing.JTextField();
+        jLabel23 = new javax.swing.JLabel();
+        jTextField23 = new javax.swing.JTextField();
+        jLabel24 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox();
+        SignUpPanel = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jTextField24 = new javax.swing.JTextField();
+        jTextField25 = new javax.swing.JTextField();
+        jLabel27 = new javax.swing.JLabel();
+        jTextField26 = new javax.swing.JTextField();
+        jLabel28 = new javax.swing.JLabel();
+        jTextField27 = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox();
+        Accounts = new javax.swing.JPanel();
         Savings = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        Checking = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
+        Checking = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
         Credit = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -62,154 +76,207 @@ public class jFinanceFrame extends javax.swing.JFrame {
         jTextField9 = new javax.swing.JTextField();
         jTextField10 = new javax.swing.JTextField();
         addAccountsButton = new javax.swing.JButton();
+        Income = new javax.swing.JPanel();
+        Savings1 = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jTextField11 = new javax.swing.JTextField();
+        Checking1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        Credit1 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jTextField13 = new javax.swing.JTextField();
+        Loans1 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jTextField15 = new javax.swing.JTextField();
+        addAccountsButton1 = new javax.swing.JButton();
+        Expenses = new javax.swing.JPanel();
+        AutoPayments = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
+        jTextField33 = new javax.swing.JTextField();
+        Groceries = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jTextField17 = new javax.swing.JTextField();
+        DiningEntertainment1 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jTextField19 = new javax.swing.JTextField();
+        Transportation = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        jTextField18 = new javax.swing.JTextField();
+        Budget = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane2 = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        RoomSchedulerTitle.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        RoomSchedulerTitle.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         RoomSchedulerTitle.setForeground(new java.awt.Color(204, 0, 0));
         RoomSchedulerTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         RoomSchedulerTitle.setText("jFinance");
 
-        ReserveRoom_Faculty.setText("Faculty: ");
+        TimeDate.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
+        TimeDate.setForeground(new java.awt.Color(51, 51, 51));
+        TimeDate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TimeDate.setText("1/17/2020");
 
-        ReserveRoom_Date.setText("Date: ");
+        LoginSignup.setName(""); // NOI18N
+        LoginSignup.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        ReserveRoom_SeatsRequired.setText("Seats Required: ");
+        jTextPane1.setText("Make user enter their name here. No password");
+        jScrollPane1.setViewportView(jTextPane1);
 
-        ReserveRoom_SeatsTextField.setColumns(3);
+        LoginSignup.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 330, 40));
 
-        ReserveRoom_SubmitButton.setText("Submit");
-        ReserveRoom_SubmitButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ReserveRoom_SubmitButtonActionPerformed(evt);
-            }
-        });
+        SignInPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Sign In"));
 
-        ReserveRoom_InputTextArea.setEditable(false);
-        ReserveRoom_InputTextArea.setColumns(20);
-        ReserveRoom_InputTextArea.setRows(5);
+        jLabel20.setText("First Name:");
 
-        ReserveRoom_InputLabel.setText("Input Information");
+        jLabel21.setText("Last Name:");
 
-        ReserveRoom_ConfirmationLabel.setText("Reservation Information");
+        jTextField20.setText("John");
 
-        ReserveRoom_ConfirmationTextArea.setEditable(false);
-        ReserveRoom_ConfirmationTextArea.setColumns(20);
-        ReserveRoom_ConfirmationTextArea.setRows(5);
+        jTextField21.setText("Guy");
 
-        javax.swing.GroupLayout ReserveRoom_JPanelLayout = new javax.swing.GroupLayout(ReserveRoom_JPanel);
-        ReserveRoom_JPanel.setLayout(ReserveRoom_JPanelLayout);
-        ReserveRoom_JPanelLayout.setHorizontalGroup(
-            ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ReserveRoom_JPanelLayout.createSequentialGroup()
-                .addGroup(ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ReserveRoom_JPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ReserveRoom_InputLabel)
-                            .addComponent(ReserveRoom_InputTextArea, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(ReserveRoom_JPanelLayout.createSequentialGroup()
-                                .addComponent(ReserveRoom_ConfirmationLabel)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addComponent(ReserveRoom_ConfirmationTextArea, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)))
-                    .addGroup(ReserveRoom_JPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ReserveRoom_Faculty)
-                            .addComponent(ReserveRoom_Date)
-                            .addComponent(ReserveRoom_SeatsRequired))
-                        .addGap(18, 18, 18)
-                        .addGroup(ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(ReserveRoom_FacultyComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ReserveRoom_DateComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ReserveRoom_SeatsTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)))
-                    .addGroup(ReserveRoom_JPanelLayout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(ReserveRoom_SubmitButton)))
-                .addGap(22, 22, 22))
-        );
-        ReserveRoom_JPanelLayout.setVerticalGroup(
-            ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ReserveRoom_JPanelLayout.createSequentialGroup()
+        jLabel22.setText("Title:");
+
+        jTextField22.setText("Prof, DrSC");
+
+        jLabel23.setText("Nickname:");
+
+        jTextField23.setText("gui-master");
+
+        jLabel24.setText("Display Format:");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "[Nickname]  First_Name + Last_Name" }));
+
+        javax.swing.GroupLayout SignInPanelLayout = new javax.swing.GroupLayout(SignInPanel);
+        SignInPanel.setLayout(SignInPanelLayout);
+        SignInPanelLayout.setHorizontalGroup(
+            SignInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SignInPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ReserveRoom_Faculty)
-                    .addComponent(ReserveRoom_FacultyComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ReserveRoom_Date)
-                    .addComponent(ReserveRoom_DateComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ReserveRoom_SeatsRequired)
-                    .addComponent(ReserveRoom_SeatsTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ReserveRoom_SubmitButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ReserveRoom_JPanelLayout.createSequentialGroup()
-                        .addComponent(ReserveRoom_ConfirmationLabel)
-                        .addGap(185, 185, 185))
-                    .addGroup(ReserveRoom_JPanelLayout.createSequentialGroup()
-                        .addComponent(ReserveRoom_InputLabel)
-                        .addGap(3, 3, 3)
-                        .addGroup(ReserveRoom_JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(ReserveRoom_InputTextArea)
-                            .addComponent(ReserveRoom_ConfirmationTextArea, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jTabbedPane1.addTab("Reserve Room", ReserveRoom_JPanel);
-
-        addAccounts.setName(""); // NOI18N
-        addAccounts.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Savings.setBorder(javax.swing.BorderFactory.createTitledBorder("Checking Accounts"));
-
-        jLabel1.setText("Balance:");
-
-        jLabel2.setText("Interest Rate:");
-
-        jTextField1.setText("$12,345");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
-        jTextField2.setText("x.x%");
-
-        javax.swing.GroupLayout SavingsLayout = new javax.swing.GroupLayout(Savings);
-        Savings.setLayout(SavingsLayout);
-        SavingsLayout.setHorizontalGroup(
-            SavingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SavingsLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel1)
+                .addGroup(SignInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel24)
+                    .addComponent(jLabel22)
+                    .addComponent(jLabel20))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                .addGroup(SignInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SignInPanelLayout.createSequentialGroup()
+                        .addGroup(SignInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField22, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                            .addComponent(jTextField20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(SignInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel21)
+                            .addComponent(jLabel23))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(SignInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField21, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                            .addComponent(jTextField23, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)))
+                    .addComponent(jComboBox1, 0, 74, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        SavingsLayout.setVerticalGroup(
-            SavingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SavingsLayout.createSequentialGroup()
-                .addGroup(SavingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+        SignInPanelLayout.setVerticalGroup(
+            SignInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SignInPanelLayout.createSequentialGroup()
+                .addGroup(SignInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel21))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(SignInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel23)
+                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(SignInPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        addAccounts.add(Savings, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 430, 50));
+        LoginSignup.add(SignInPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 430, 110));
 
-        Checking.setBorder(javax.swing.BorderFactory.createTitledBorder("Savings Accounts"));
+        SignUpPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Sign Up"));
+
+        jLabel25.setText("First Name:");
+
+        jLabel26.setText("Last Name:");
+
+        jTextField24.setText("John");
+
+        jTextField25.setText("Guy");
+
+        jLabel27.setText("Title:");
+
+        jTextField26.setText("Prof, DrSC");
+
+        jLabel28.setText("Nickname:");
+
+        jTextField27.setText("gui-master");
+
+        jLabel29.setText("Display Format:");
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "[Nickname]  First_Name + Last_Name" }));
+
+        javax.swing.GroupLayout SignUpPanelLayout = new javax.swing.GroupLayout(SignUpPanel);
+        SignUpPanel.setLayout(SignUpPanelLayout);
+        SignUpPanelLayout.setHorizontalGroup(
+            SignUpPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SignUpPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(SignUpPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel29)
+                    .addComponent(jLabel27)
+                    .addComponent(jLabel25))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(SignUpPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(SignUpPanelLayout.createSequentialGroup()
+                        .addGroup(SignUpPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField26, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                            .addComponent(jTextField24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(SignUpPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel26)
+                            .addComponent(jLabel28))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(SignUpPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField25, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                            .addComponent(jTextField27, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)))
+                    .addComponent(jComboBox2, 0, 74, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        SignUpPanelLayout.setVerticalGroup(
+            SignUpPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SignUpPanelLayout.createSequentialGroup()
+                .addGroup(SignUpPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(jTextField25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel26))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(SignUpPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel27)
+                    .addComponent(jTextField27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel28)
+                    .addComponent(jTextField26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(SignUpPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel29)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        LoginSignup.add(SignUpPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 430, 110));
+
+        mainPane.addTab("Login Page", LoginSignup);
+
+        Accounts.setName(""); // NOI18N
+        Accounts.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Savings.setBorder(javax.swing.BorderFactory.createTitledBorder("Savings Accounts"));
 
         jLabel5.setText("Balance:");
 
@@ -224,11 +291,11 @@ public class jFinanceFrame extends javax.swing.JFrame {
 
         jTextField6.setText("x.x%");
 
-        javax.swing.GroupLayout CheckingLayout = new javax.swing.GroupLayout(Checking);
-        Checking.setLayout(CheckingLayout);
-        CheckingLayout.setHorizontalGroup(
-            CheckingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CheckingLayout.createSequentialGroup()
+        javax.swing.GroupLayout SavingsLayout = new javax.swing.GroupLayout(Savings);
+        Savings.setLayout(SavingsLayout);
+        SavingsLayout.setHorizontalGroup(
+            SavingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SavingsLayout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -239,10 +306,10 @@ public class jFinanceFrame extends javax.swing.JFrame {
                 .addComponent(jTextField6, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
                 .addContainerGap())
         );
-        CheckingLayout.setVerticalGroup(
-            CheckingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CheckingLayout.createSequentialGroup()
-                .addGroup(CheckingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+        SavingsLayout.setVerticalGroup(
+            SavingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SavingsLayout.createSequentialGroup()
+                .addGroup(SavingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -250,7 +317,50 @@ public class jFinanceFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        addAccounts.add(Checking, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 50));
+        Accounts.add(Savings, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 50));
+
+        Checking.setBorder(javax.swing.BorderFactory.createTitledBorder("Checking Accounts"));
+
+        jLabel1.setText("Balance:");
+
+        jLabel2.setText("Interest Rate:");
+
+        jTextField1.setText("$12,345");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jTextField2.setText("x.x%");
+
+        javax.swing.GroupLayout CheckingLayout = new javax.swing.GroupLayout(Checking);
+        Checking.setLayout(CheckingLayout);
+        CheckingLayout.setHorizontalGroup(
+            CheckingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CheckingLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        CheckingLayout.setVerticalGroup(
+            CheckingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CheckingLayout.createSequentialGroup()
+                .addGroup(CheckingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Accounts.add(Checking, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 430, 50));
 
         Credit.setBorder(javax.swing.BorderFactory.createTitledBorder("Credit Accounts"));
 
@@ -293,7 +403,7 @@ public class jFinanceFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        addAccounts.add(Credit, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 430, 50));
+        Accounts.add(Credit, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 430, 50));
 
         Loans.setBorder(javax.swing.BorderFactory.createTitledBorder("Loan Accounts"));
 
@@ -336,7 +446,7 @@ public class jFinanceFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        addAccounts.add(Loans, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 430, 50));
+        Accounts.add(Loans, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 430, 50));
 
         addAccountsButton.setText("Submit");
         addAccountsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -344,69 +454,330 @@ public class jFinanceFrame extends javax.swing.JFrame {
                 addAccountsButtonActionPerformed(evt);
             }
         });
-        addAccounts.add(addAccountsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
+        Accounts.add(addAccountsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
 
-        jTabbedPane1.addTab("Add Accounts", addAccounts);
+        mainPane.addTab("Add Accounts", Accounts);
+
+        Income.setName(""); // NOI18N
+        Income.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Savings1.setBorder(javax.swing.BorderFactory.createTitledBorder("Monthly Income"));
+
+        jLabel11.setText("Amount ($):");
+
+        jTextField11.setText("$12,345");
+        jTextField11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField11ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Savings1Layout = new javax.swing.GroupLayout(Savings1);
+        Savings1.setLayout(Savings1Layout);
+        Savings1Layout.setHorizontalGroup(
+            Savings1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Savings1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField11, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        Savings1Layout.setVerticalGroup(
+            Savings1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Savings1Layout.createSequentialGroup()
+                .addGroup(Savings1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Income.add(Savings1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 50));
+
+        Checking1.setBorder(javax.swing.BorderFactory.createTitledBorder("Rental Income"));
+
+        jLabel3.setText("Amount ($):");
+
+        jTextField3.setText("$12,345");
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Checking1Layout = new javax.swing.GroupLayout(Checking1);
+        Checking1.setLayout(Checking1Layout);
+        Checking1Layout.setHorizontalGroup(
+            Checking1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Checking1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        Checking1Layout.setVerticalGroup(
+            Checking1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Checking1Layout.createSequentialGroup()
+                .addGroup(Checking1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Income.add(Checking1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 210, 50));
+
+        Credit1.setBorder(javax.swing.BorderFactory.createTitledBorder("Investment Income"));
+
+        jLabel13.setText("Amount ($):");
+
+        jTextField13.setText("$12,345");
+        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField13ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Credit1Layout = new javax.swing.GroupLayout(Credit1);
+        Credit1.setLayout(Credit1Layout);
+        Credit1Layout.setHorizontalGroup(
+            Credit1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Credit1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Credit1Layout.setVerticalGroup(
+            Credit1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Credit1Layout.createSequentialGroup()
+                .addGroup(Credit1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Income.add(Credit1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 210, 50));
+
+        Loans1.setBorder(javax.swing.BorderFactory.createTitledBorder("Other Income"));
+
+        jLabel15.setText("Amount ($):");
+
+        jTextField15.setText("$12,345");
+        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField15ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Loans1Layout = new javax.swing.GroupLayout(Loans1);
+        Loans1.setLayout(Loans1Layout);
+        Loans1Layout.setHorizontalGroup(
+            Loans1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Loans1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Loans1Layout.setVerticalGroup(
+            Loans1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Loans1Layout.createSequentialGroup()
+                .addGroup(Loans1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15)
+                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Income.add(Loans1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 210, 50));
+
+        addAccountsButton1.setText("Submit");
+        addAccountsButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addAccountsButton1ActionPerformed(evt);
+            }
+        });
+        Income.add(addAccountsButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, -1, -1));
+
+        mainPane.addTab("Income", Income);
+
+        Expenses.setName(""); // NOI18N
+        Expenses.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        AutoPayments.setBorder(javax.swing.BorderFactory.createTitledBorder("Auto Payments"));
+
+        jLabel33.setText("Monthly Payments");
+
+        jTextField33.setText("$12,345");
+        jTextField33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField33ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AutoPaymentsLayout = new javax.swing.GroupLayout(AutoPayments);
+        AutoPayments.setLayout(AutoPaymentsLayout);
+        AutoPaymentsLayout.setHorizontalGroup(
+            AutoPaymentsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AutoPaymentsLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField33, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                .addGap(93, 93, 93))
+        );
+        AutoPaymentsLayout.setVerticalGroup(
+            AutoPaymentsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AutoPaymentsLayout.createSequentialGroup()
+                .addGroup(AutoPaymentsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel33)
+                    .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Expenses.add(AutoPayments, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 50));
+
+        Groceries.setBorder(javax.swing.BorderFactory.createTitledBorder("Groceries"));
+
+        jLabel17.setText("Monthly Payments");
+
+        jTextField17.setText("$12,345");
+        jTextField17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField17ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout GroceriesLayout = new javax.swing.GroupLayout(Groceries);
+        Groceries.setLayout(GroceriesLayout);
+        GroceriesLayout.setHorizontalGroup(
+            GroceriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(GroceriesLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel17)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField17, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                .addGap(93, 93, 93))
+        );
+        GroceriesLayout.setVerticalGroup(
+            GroceriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(GroceriesLayout.createSequentialGroup()
+                .addGroup(GroceriesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Expenses.add(Groceries, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 430, 50));
+
+        DiningEntertainment1.setBorder(javax.swing.BorderFactory.createTitledBorder("Dining & Entertertainment"));
+
+        jLabel19.setText("Monthly Payments");
+
+        jTextField19.setText("$12,345");
+        jTextField19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField19ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout DiningEntertainment1Layout = new javax.swing.GroupLayout(DiningEntertainment1);
+        DiningEntertainment1.setLayout(DiningEntertainment1Layout);
+        DiningEntertainment1Layout.setHorizontalGroup(
+            DiningEntertainment1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DiningEntertainment1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel19)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField19, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                .addGap(93, 93, 93))
+        );
+        DiningEntertainment1Layout.setVerticalGroup(
+            DiningEntertainment1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DiningEntertainment1Layout.createSequentialGroup()
+                .addGroup(DiningEntertainment1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(jTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Expenses.add(DiningEntertainment1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 430, 50));
+
+        Transportation.setBorder(javax.swing.BorderFactory.createTitledBorder("Transportation"));
+
+        jLabel18.setText("Monthly Payments");
+
+        jTextField18.setText("$12,345");
+        jTextField18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField18ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout TransportationLayout = new javax.swing.GroupLayout(Transportation);
+        Transportation.setLayout(TransportationLayout);
+        TransportationLayout.setHorizontalGroup(
+            TransportationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TransportationLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField18, javax.swing.GroupLayout.DEFAULT_SIZE, 6, Short.MAX_VALUE)
+                .addGap(93, 93, 93))
+        );
+        TransportationLayout.setVerticalGroup(
+            TransportationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TransportationLayout.createSequentialGroup()
+                .addGroup(TransportationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Expenses.add(Transportation, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 430, 50));
+
+        mainPane.addTab("Expenses", Expenses);
+
+        Budget.setName(""); // NOI18N
+        Budget.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextPane2.setText("Place a budget breakdown pie chart here. One pie chart for income, expenses.");
+        jScrollPane2.setViewportView(jTextPane2);
+
+        Budget.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 120));
+
+        mainPane.addTab("Budget Breakdown", Budget);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(mainPane, javax.swing.GroupLayout.PREFERRED_SIZE, 441, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(167, 167, 167)
-                        .addComponent(RoomSchedulerTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 441, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(RoomSchedulerTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(TimeDate, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(RoomSchedulerTitle)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RoomSchedulerTitle)
+                    .addComponent(TimeDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mainPane, javax.swing.GroupLayout.PREFERRED_SIZE, 379, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void ReserveRoom_SubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReserveRoom_SubmitButtonActionPerformed
-        //CREATE RESERVATION FOR THE FACULTY, WITH ROOM (based on seats), ON DATE.
-
-        String facultyName = ReserveRoom_FacultyComboBox.getSelectedItem().toString();
-        Integer seatsRequired = Integer.parseInt(ReserveRoom_SeatsTextField.getText());
-        String dateString = ReserveRoom_DateComboBox.getSelectedItem().toString(); //have to convert to string
-        Date reserveDate = Date.valueOf(ReserveRoom_DateComboBox.getSelectedItem().toString()); //used to search SQL
-        Timestamp currentTimestamp = new Timestamp(Calendar.getInstance().getTime().getTime());
-        //DISPLAY INPUTTED INFORMATION
-        ReserveRoom_InputTextArea.setText("Faculty Name: "+facultyName+ "\nDate: " + dateString + "\nSeats: " + seatsRequired);
-        //END INPUT
-
-        //START CREATING RESERVATION
-        ArrayList<String> bestRooms = RoomQueries.getBestRooms(seatsRequired); //list of possible rooms for teacher.
-        ArrayList<String> roomsReservedOnDate = ReservationQueries.getRoomsReservedByDate(reserveDate); // used to check if room selected is reserved.
-        if(bestRooms.isEmpty()){ //check if roomList is empty (aka there are no rooms for the teacher)
-            WaitlistQueries.addWaitlistEntry(facultyName, reserveDate, seatsRequired, currentTimestamp);
-            ReserveRoom_ConfirmationTextArea.setText("There are no rooms avaliable with enough seats.\nYou've been added to the waitlist.\n"+
-                "Faculty Name: " + facultyName + "\nDate: " + dateString + "\nSeats: " + seatsRequired + "\nTimestamp: "+ currentTimestamp);
-        }
-        else if(roomsReservedOnDate.contains(bestRooms.get(0))){//if the current room has a reservation, then add to waitlist
-            WaitlistQueries.addWaitlistEntry(facultyName, reserveDate, seatsRequired, currentTimestamp);
-            ReserveRoom_ConfirmationTextArea.setText("There are no rooms available on this date.\nYou've been added to the waitlist.\n"+
-                "Faculty Name: " + facultyName + "\nDate: " + dateString + "\nSeats: " + seatsRequired + "\nTimestamp: "+ currentTimestamp);
-        }
-        else{//normal case, no need for waitlist.
-            String bestRoom = RoomQueries.getBestRooms(seatsRequired).get(0);// GETS ROOM
-            ReservationQueries.addReservationEntry(facultyName, bestRoom, reserveDate, seatsRequired, currentTimestamp); //input necessary data
-            //DISPLAYING RESERVATION CONFIRMATION
-            ReserveRoom_ConfirmationTextArea.setText("Reservation Created For: \nFaculty Name: " + facultyName + "\nRoom: " + bestRoom +"\nDate: " + dateString + "\nSeats: " + seatsRequired + "\nTimestamp: "+ currentTimestamp);
-        }
-    }//GEN-LAST:event_ReserveRoom_SubmitButtonActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -427,6 +798,42 @@ public class jFinanceFrame extends javax.swing.JFrame {
     private void addAccountsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addAccountsButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_addAccountsButtonActionPerformed
+
+    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField17ActionPerformed
+
+    private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField18ActionPerformed
+
+    private void jTextField33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField33ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField33ActionPerformed
+
+    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField19ActionPerformed
+
+    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField11ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField13ActionPerformed
+
+    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField15ActionPerformed
+
+    private void addAccountsButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addAccountsButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addAccountsButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -464,41 +871,85 @@ public class jFinanceFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Accounts;
+    private javax.swing.JPanel AutoPayments;
+    private javax.swing.JPanel Budget;
     private javax.swing.JPanel Checking;
+    private javax.swing.JPanel Checking1;
     private javax.swing.JPanel Credit;
+    private javax.swing.JPanel Credit1;
+    private javax.swing.JPanel DiningEntertainment1;
+    private javax.swing.JPanel Expenses;
+    private javax.swing.JPanel Groceries;
+    private javax.swing.JPanel Income;
     private javax.swing.JPanel Loans;
-    private javax.swing.JLabel ReserveRoom_ConfirmationLabel;
-    private javax.swing.JTextArea ReserveRoom_ConfirmationTextArea;
-    private javax.swing.JLabel ReserveRoom_Date;
-    private javax.swing.JComboBox<String> ReserveRoom_DateComboBox;
-    private javax.swing.JLabel ReserveRoom_Faculty;
-    private javax.swing.JComboBox<String> ReserveRoom_FacultyComboBox;
-    private javax.swing.JLabel ReserveRoom_InputLabel;
-    private javax.swing.JTextArea ReserveRoom_InputTextArea;
-    private javax.swing.JPanel ReserveRoom_JPanel;
-    private javax.swing.JLabel ReserveRoom_SeatsRequired;
-    private javax.swing.JTextField ReserveRoom_SeatsTextField;
-    private javax.swing.JButton ReserveRoom_SubmitButton;
+    private javax.swing.JPanel Loans1;
+    private javax.swing.JPanel LoginSignup;
     private javax.swing.JLabel RoomSchedulerTitle;
     private javax.swing.JPanel Savings;
-    private javax.swing.JPanel addAccounts;
+    private javax.swing.JPanel Savings1;
+    private javax.swing.JPanel SignInPanel;
+    private javax.swing.JPanel SignUpPanel;
+    private javax.swing.JLabel TimeDate;
+    private javax.swing.JPanel Transportation;
     private javax.swing.JButton addAccountsButton;
+    private javax.swing.JButton addAccountsButton1;
+    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JComboBox jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
+    private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField23;
+    private javax.swing.JTextField jTextField24;
+    private javax.swing.JTextField jTextField25;
+    private javax.swing.JTextField jTextField26;
+    private javax.swing.JTextField jTextField27;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField33;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JTextPane jTextPane2;
+    private javax.swing.JTabbedPane mainPane;
     // End of variables declaration//GEN-END:variables
 }
