@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "noUnusedLocals": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "target": "es2016",
+    "outDir": "./build",
+    "lib": [
+      "es2016",
+      "ES2015.Promise",
+      "DOM"
+    ],
+    "types":[
+      "@finos/perspective-phosphor",
+      "node"
+    ]
+  },
+  "include": ["package.json", "src/ts/*"]
+}
